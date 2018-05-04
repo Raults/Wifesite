@@ -15,6 +15,12 @@ app.get('/', (req, res)=>{
 app.get('/home', (req, res)=>{
   res.sendFile('html/home.html', {root: path.join(__dirname, './assets')});
 });
+app.get('/genesis', (req, res)=>{
+  res.sendFile('html/gen.html', {root: path.join(__dirname, './assets')});
+});
+app.get('/yampier', (req, res)=>{
+  res.sendFile('html/yam.html', {root: path.join(__dirname, './assets')});
+});
 app.get('/template', (req, res)=>{
   res.sendFile('html/template.html', {root: path.join(__dirname, './assets')});
 });

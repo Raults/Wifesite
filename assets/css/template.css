@@ -1,6 +1,7 @@
 html {
   font-size: 1rem;
   /*1rem = 16px*/
+  height: 100%;
 }
 
 /*********
@@ -33,6 +34,7 @@ body {
   background-color: #f5f6fa;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
+  font-weight: 700;
   height: 100%;
   margin: 0;
 }
@@ -47,37 +49,111 @@ body {
   height: 100%;
   justify-content: flex-start;
   width: 100vw;
+  overflow-x: hidden;
 }
 
-.nav-container {
+.banner-container {
   align-items: center;
   background-color: #111;
-  box-shadow: 0 1rem 1rem 0 rgba(220, 220, 220, 1);
+  box-shadow: 0 .25rem 1rem 0 rgba(0, 0, 0, .5);
   display: flex;
-  flex: 1 1 auto;
-  justify-content: space-around;
-  min-height: 5rem;
+  justify-content: center;
+  min-height: 8rem;
   overflow: auto;
   z-index: 10;
 }
 
 .content-container {
-  flex: 1 1 auto;
-  min-height: 5rem;
+  flex: 1;
+  overflow: hidden;
 }
 
 .footer-container {
-  align-items: center;
+  align-items: flex-start;
   background-color: #111;
-  box-shadow: 0 -1rem 1rem 0 rgba(220, 220, 220, 1);
+  box-shadow: 0 -.25rem 1rem 0 rgba(0, 0, 0, .5);
   display: flex;
-  flex: 1 1 auto;
   justify-content: space-around;
-  min-height: 5rem;
+  min-height: 10rem;
   overflow: auto;
   z-index: 10;
 }
 
-.nav-text {
+/**********
+ * banner *
+ **********/
+
+.banner {
+  align-items: center;
+  display: flex;
+  font-size: 6rem;
+  font-weight: 100;
+  justify-content: center;
+}
+
+/**********
+ * footer *
+ **********/
+
+ .logo {
+   background-color: #111;
+   background-image: url("../img/aries.jpg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 10rem;
+   width: 8rem;
+ }
+
+.footer-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-header {
   font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.social-media {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.email, .facebook, .instagram {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  margin: 0 2rem;
+  width: 3rem;
+}
+
+.email {
+  background-image: url("../img/Gmail.png");
+}
+
+.facebook {
+  background-image: url("../img/Facebook.png");
+}
+
+.instagram {
+  background-image: url("../img/Instagram.png");
+}
+
+.email:hover, .facebook:hover, .instagram:hover {
+  opacity: .75;
+  transition: .2s ease;
+}
+
+.email:active, .facebook:active, .instagram:active {
+  opacity: 1;
+  transition: 0s;
+}
+
+.github {
+
 }

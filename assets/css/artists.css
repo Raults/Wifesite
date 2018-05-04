@@ -1,0 +1,34 @@
+.artists {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.yam, .gen {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 64rem;
+  min-height: 40rem;
+  min-width: 40rem;
+  overflow: hidden;
+  width: 64rem;
+}
+
+.yam {
+  background-image: url("../img/yam.png");
+}
+
+.gen {
+  background-image: url("../img/gen.png");
+}
+
+.yam:hover ,.gen:hover {
+  transition: .5s ease;
+  opacity: .3
+}
+
+.yam:active ,.gen:active {
+  transition: 0s;
+  opacity: 1;
+}
